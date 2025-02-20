@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Configure Debug",
+        "type": "shell",
+        "command": "cmake",
+        "args": [
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-S", "${workspaceFolder}",
+          "-B", "${workspaceFolder}/build/debug"
+        ],
+        "group": "build"
+      },
+      {
+        "label": "Configure Release",
+        "type": "shell",
+        "command": "cmake",
+        "args": [
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-S", "${workspaceFolder}",
+          "-B", "${workspaceFolder}/build/release"
+        ],
+        "group": "build"
+      }
+    ]
+  }

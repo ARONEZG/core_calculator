@@ -10,7 +10,7 @@
 
 class Calculator : public QObject, private ExpressionConverter {
 public:
-    Calculator();
+    Calculator() = default;
 
     double Calculate(ExpressionConverter& p);
 

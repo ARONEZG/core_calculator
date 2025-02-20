@@ -1,0 +1,33 @@
+{
+    "buildType": {
+        "default": "debug",
+        "description": "The build type.",
+        "choices": {
+            "debug": {
+                "short": "Debug",
+                "long": "Disable optimizations - include debug information.",
+                "buildType": "Debug"
+            },
+            "release": {
+                "short": "Release",
+                "long": "Optimize for speed - exclude debug information.",
+                "buildType": "Release"
+            },
+            "asan": {
+                "short": "Asan",
+                "long": "instrument with adress serializer",
+                "buildType": "Asan"
+            },
+            "reldeb": {
+                "short": "RelWithDebInfo",
+                "long": "Optimize for speed - include debug information.",
+                "buildType": "RelWithDebInfo"
+            },
+            "unspecified": {
+                "short": "Unspecified",
+                "long": "Let CMake pick the default build type.",
+                "buildType": "Unspecified"
+            }
+        }
+    }
+}
