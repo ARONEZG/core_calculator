@@ -6,9 +6,8 @@
 #include <deque>
 #include <utility>
 #include <cassert>
-#include <QObject>
 
-class Calculator : public QObject, private ExpressionConverter {
+class Calculator : public ExpressionConverter {
 public:
     Calculator() = default;
 
